@@ -1,0 +1,36 @@
+{
+  "name": "lit-min",
+  "version": "0.0.1",
+  "description": "Buildless lit package, use lit without the need for a build system",
+  "main": "lit.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tirithen/lit-min.git"
+  },
+  "keywords": [
+    "lit",
+    "web",
+    "component",
+    "custom",
+    "element",
+    "buildless"
+  ],
+  "author": "Fredrik Söderström <tirithen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tirithen/lit-min/issues"
+  },
+  "homepage": "https://github.com/tirithen/lit-min#readme",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "dompurify": "^3.0.6",
+    "lit": "^3.0.0",
+    "rollup": "^4.1.4",
+    "standard-version": "^9.5.0"
+  }
+}
