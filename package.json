@@ -5,7 +5,7 @@
   "main": "lit.js",
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "prepublish": "rm -rf ./dist/ && npm ci && npm run build && standard-version && git push --tags"
+    "prepublishOnly": "rm -rf ./dist/ && npm ci && npm run build && standard-version && git push --tags"
   },
   "type": "module",
   "repository": {
