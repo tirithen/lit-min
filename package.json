@@ -4,7 +4,8 @@
   "description": "Buildless lit package, use lit without the need for a build system",
   "main": "lit.js",
   "scripts": {
-    "build": "rollup -c rollup.config.js"
+    "build": "rollup -c rollup.config.js",
+    "prepublish": "rm -rf ./dist/ && npm ci && npm run build && standard-version && git push --tags"
   },
   "type": "module",
   "repository": {
