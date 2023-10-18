@@ -1,6 +1,6 @@
 {
   "name": "lit-min",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Buildless lit package, use lit without the need for a build system",
   "main": "lit.js",
   "scripts": {
