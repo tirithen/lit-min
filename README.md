@@ -13,31 +13,30 @@ in your web servers static directory.
 ```html
 <!DOCTYPE html>
 <html lang="en-US">
-        <head>
-                <meta charset="utf-8"></meta>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Demo</title>
-                <script type="module">
-                        import {LitElement, html} from '/lit.js';
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script type="module">
+      import {LitElement, html} from '/lit.js';
 
-						// As an alternative use unpkg directly, but bewhare that using third party domains is a 
-						// security risk!
-                        // import {LitElement, html} from 'https://www.unpkg.com/lit-min/dist/lit.js';
+      // As an alternative use unpkg directly, but bewhare that using third
+      // party domains is a security risk!
+      // import {LitElement, html} from 'https://www.unpkg.com/lit-min/dist/lit.js';
 
-                        class Test extends LitElement {
-                                render() {
-                                        return html`Test element`;
-                                }
-                        }
+      class Test extends LitElement {
+        render() {
+          return html`Test element`;
+        }
+      }
 
-                        customElements.define('test-element', Test);
-                </script>
-        </head>
-        <body>
-                <test-element></test-element>
-        </body>
+      customElements.define('test-element', Test);
+    </script>
+  </head>
+  <body>
+    <test-element></test-element>
+  </body>
 </html>
-
 ```
 
 # With DOMPurify
@@ -49,32 +48,31 @@ to prevent XSS attacks.
 ```html
 <!DOCTYPE html>
 <html lang="en-US">
-        <head>
-                <meta charset="utf-8"></meta>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Demo</title>
-                <script type="module">
-                        import {LitElement, html, unsafeHTML} from '/lit.js';
-                        import {sanitize} from '/dompurify.js';
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script type="module">
+      import {LitElement, html, unsafeHTML} from '/lit.js';
+      import {sanitize} from '/dompurify.js';
 
-						// As an alternative use unpkg directly, but bewhare that using third party domains is a 
-						// security risk!
-                        // import {LitElement, html} from 'https://www.unpkg.com/lit-min/dist/lit.js';
-                        // import {sanitize} from 'https://www.unpkg.com/lit-min/dist/dompurify.js';
+      // As an alternative use unpkg directly, but bewhare that using third
+      // party domains is a security risk!
+      // import {LitElement, html} from 'https://www.unpkg.com/lit-min/dist/lit.js';
+      // import {sanitize} from 'https://www.unpkg.com/lit-min/dist/dompurify.js';
 
-                        class Test extends LitElement {
-                                render() {
-                                        const markup = sanitize('<strong>markup</strong>');
-                                        return html`Test ${unsafeHTML(markup)} element`;
-                                }
-                        }
+      class Test extends LitElement {
+        render() {
+          const markup = sanitize('<strong>markup</strong>');
+          return html`Test ${unsafeHTML(markup)} element`;
+        }
+      }
 
-                        customElements.define('test-element', Test);
-                </script>
-        </head>
-        <body>
-                <test-element></test-element>
-        </body>
+      customElements.define('test-element', Test);
+    </script>
+  </head>
+  <body>
+    <test-element></test-element>
+  </body>
 </html>
-
 ```
