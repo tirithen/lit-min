@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/tirithen/lit-min/compare/v0.0.2...v3.1.0) (2023-11-22)
+
+
+### Features
+
+* use lit 3.1.0 ([bd0b5f9](https://github.com/tirithen/lit-min/commit/bd0b5f984a0e9f9c37e963b5dbc88afb24b4a9fa))
+
 ### 0.0.2 (2023-10-18)
 
 
