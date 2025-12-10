@@ -19,3 +19,9 @@ export {ref} from 'lit/directives/ref.js';
 export {until} from 'lit/directives/until.js';
 export {asyncAppend} from 'lit/directives/async-append.js';
 export {asyncReplace} from 'lit/directives/async-replace.js';
+export * from '@lit-labs/signals';
+
+import {Signal} from '@lit-labs/signals';
+if (!(window.Signal instanceof Object)) {
+  window.Signal = Signal;
+}
