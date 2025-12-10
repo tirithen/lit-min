@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.1](https://github.com/tirithen/lit-min/compare/v3.1.0...v3.3.1) (2025-12-10)
+
+
+### Features
+
+* update lit 3.3.1, dompurify 3.3.1, signal api ([d1945f5](https://github.com/tirithen/lit-min/commit/d1945f5c0cec5933e2dcb08226c99f59d2bbfe95))
+
 ## [3.1.0](https://github.com/tirithen/lit-min/compare/v0.0.2...v3.1.0) (2023-11-22)
 
 
